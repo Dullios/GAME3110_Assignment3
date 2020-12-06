@@ -1,0 +1,70 @@
+Game 1:
+Catherine(1562), David(1566), Alex(1603)
+David came in first.
+Alex came in second.
+Catherine came in third.
+Catherine(1547), David(1582), Alex(1601)
+
+Game 2:
+Joss(1664), Tom(1648), Paige(1669)
+Paige came in first.
+Tom came in second.
+Joss came in third.
+Joss(1648), Tom(1648), Paige(1683)
+
+Game 3:
+Rachel(1611), Michael(1581), David(1582)
+Michael came in first.
+David came in second.
+Rachel came in third.
+Rachel(1594), Michael(1596), David(1582)
+
+Game 4:
+Mila(1653), Joss(1648), Tom(1648)
+Joss came in first.
+Tom came in second.
+Mila came in third.
+Mila(1637), Joss(1663), Tom(1648)
+
+Game 5:
+Catherine(1547), Rachel(1594), Michael(1596)
+Rachel came in first.
+Catherine came in second.
+Michael came in third.
+Catherine(1549), Rachel(1607), Michael(1580)
+
+Game 6:
+Firas(1708), Paige(1683), Joss(1663)
+Joss came in first.
+Firas came in second.
+Paige came in third.
+Firas(1706), Paige(1667), Joss(1679)
+
+Game 7:
+Mila(1637), Alex(1601), Tom(1648)
+Mila came in first.
+Alex came in second.
+Tom came in third.
+Mila(1651), Alex(1602), Tom(1632)
+
+Game 8:
+David(1582), Catherine(1549), Michael(1580)
+Michael came in first.
+David came in second.
+Catherine came in third.
+David(1581), Catherine(1535), Michael(1594)
+
+Game 9:
+Firas(1706), Paige(1667), Joss(1679)
+Paige came in first.
+Joss came in second.
+Firas came in third.
+Firas(1689), Paige(1682), Joss(1679)
+
+Game 10:
+Rachel(1607), Mila(1651), Alex(1602)
+Alex came in first.
+Mila came in second.
+Rachel came in third.
+Rachel(1592), Mila(1648), Alex(1618)
+

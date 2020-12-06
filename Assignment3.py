@@ -19,7 +19,7 @@ players = {
     "5": {"name":"Rachel"},
     "6": {"name":"Michael"},
     "7": {"name":"Paige"},
-    "8": {"name":"Duncan"},
+    "8": {"name":"Firas"},
     "9": {"name":"Mila"}
 }
 # Passed as a string to the server that converts it to int
@@ -73,11 +73,11 @@ def SimulateGame(data, sock):
             gamePlayers[player2Key]['name'] + "(" + str(gamePlayers[player2Key]['rating']) + "), " +
             gamePlayers[player3Key]['name'] + "(" + str(gamePlayers[player3Key]['rating']) + ")")
     
-    logFile = open("GameRecord.txt", "w")
-    logFile.write("Game " + str(json.loads(data)['gameID']) + ":")
+    logFile = open("GameRecord.txt", "a")
+    logFile.write("Game " + str(json.loads(data)['gameID']) + ":\n")
     logFile.write(gamePlayers[player1Key]['name'] + "(" + str(gamePlayers[player1Key]['rating']) + "), " +
                     gamePlayers[player2Key]['name'] + "(" + str(gamePlayers[player2Key]['rating']) + "), " +
-                    gamePlayers[player3Key]['name'] + "(" + str(gamePlayers[player3Key]['rating']) + ")")
+                    gamePlayers[player3Key]['name'] + "(" + str(gamePlayers[player3Key]['rating']) + ")\n")
     
     gameOutcome = {}
     gameOutcome[player1Key] = randint(0, 50)
@@ -116,6 +116,10 @@ def SimulateGame(data, sock):
     print(gamePlayers[player1Key]['name'] + "(" + str(gamePlayers[player1Key]['rating']) + "), " +
             gamePlayers[player2Key]['name'] + "(" + str(gamePlayers[player2Key]['rating']) + "), " +
             gamePlayers[player3Key]['name'] + "(" + str(gamePlayers[player3Key]['rating']) + ")")
+    logFile.write(gamePlayers[player1Key]['name'] + "(" + str(gamePlayers[player1Key]['rating']) + "), " +
+            gamePlayers[player2Key]['name'] + "(" + str(gamePlayers[player2Key]['rating']) + "), " +
+            gamePlayers[player3Key]['name'] + "(" + str(gamePlayers[player3Key]['rating']) + ")\n\n")
+    logFile.close()
     UpdateDatabase(gamePlayers)
     ReConnectPlayers(gamePlayers, sock)
 
@@ -123,9 +127,9 @@ def PrintOutcome(first, second, third, log):
     print(first + " came in first.")
     print(second + " came in second.")
     print(third + " came in third.")
-    log.write(first + " came in first.")
-    log.write(second + " came in second.")
-    log.write(third + " came in third.")
+    log.write(first + " came in first.\n")
+    log.write(second + " came in second.\n")
+    log.write(third + " came in third.\n")
 
 def UpdateDatabase(temp):
     for p in temp:
